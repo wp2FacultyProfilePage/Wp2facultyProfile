@@ -1,0 +1,41 @@
+/* Styling for the flipbook container */
+.flipbook-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  /* Styling for the pages */
+  .page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+ 
+  /* Styling for page content */
+  .page h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+ 
+  .page p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  /* Add these styles to your existing CSS file or create a new one */
+.flipbook-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust this as needed to control the vertical positioning */
+}
+

@@ -1,0 +1,194 @@
+
+
+/* Common styles for all screen sizes */
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75); /* White color with 45% opacity */
+    z-index: -1; /* Place it below other content */
+    pointer-events: none; /* Allow interaction with elements beneath it */
+}
+
+.custom-sidebar {
+    background-color: #b0aeae;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; /* Ensure the sidebar is above other content */
+    transition: width 0.3s; /* Add smooth transition for width changes */
+}
+.content {
+    flex: 2; /* Take up 200% of the available width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent image overflow on small screens */
+  }
+  
+
+#CustomAdminicon_sidebar {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.custom-sidebar-text {
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+    color: white;
+    font-size: 25px;
+}
+
+.custom-logout-container {
+    margin-top: auto; /* Push it to the bottom */
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+#CustomLogoutButton {
+    background-color: #FF6437;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 18px; /* Adjust the font size as needed */
+    display: flex; /* Display icon and text side by side */
+    align-items: center; /* Center vertically */
+    font-family: Arial;
+}
+
+.custom-logout-icon {
+    font-size: 24px; /* Adjust the icon size as needed */
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+#CustomLogoutButton:hover {
+    background-color: #FF5427; /* Change the background color on hover */
+}
+
+/* Style the main content */
+.custom-main-content {
+    padding: 20px; /* Add padding for spacing */
+    height: 100vh; /* Set the maximum height */
+    margin-left: 400px; /* Push the main content to the right of the sidebar */
+    transition: margin-left 0.3s; /* Add smooth transition for margin-left changes */
+}
+
+.custom-scrollable-div {
+    height: 200px;
+    margin-left: 5%;
+    opacity: 85%;
+    width: 90%; /* Adjust width to fit the content well */
+    background-color: #b0aeae;
+    margin-bottom: 10px; /* Add spacing between divs */
+    border-radius: 15px; /* Make it a rectangular circle */
+}
+
+/* STYLE FOR ADD MODAL */
+.modal-header,
+.modal-title,
+label,
+.custom-research-title,
+.form-title {
+    color: #FF6F1E;
+}
+
+/* Change the background color of the "Add Faculty" button and "Submit" button */
+.btn.btn-primary {
+    background-color: #FF6437;
+    border-color: #FF6437; /* Set the border color to match */
+    margin-bottom: 10px; /* Add space between buttons */
+    z-index: 2; /* Ensure the button is above other content */
+}
+
+/* Change the background color on hover for the "Add Faculty" button and "Submit" button */
+.btn-primary:hover {
+    background-color: #931d00; /* Slightly darker shade on hover */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 300px) {
+    body {
+        background-position: center; /* Center the background image */
+    }
+
+    .custom-sidebar {
+        width: 100px; /* Reduce the sidebar width for mobile screens */
+        padding: 10px; /* Reduce padding for mobile screens */
+    }
+
+    #CustomAdminicon_sidebar {
+        width: 100px; /* Reduce the icon size for mobile screens */
+        height: 100px;
+        margin: 10px;
+    }
+
+    .custom-sidebar-text {
+        font-size: 18px; /* Reduce font size for mobile screens */
+        margin-bottom: 5px; /* Adjust the spacing as needed */
+    }
+
+    .custom-logout-container {
+        margin-bottom: 5%;
+    }
+
+    #CustomLogoutButton {
+        padding: 10px 20px; /* Adjust button padding for mobile screens */
+        font-size: 14px; /* Reduce font size for mobile screens */
+    }
+
+    .custom-main-content {
+        margin-left: 0; /* Remove left margin to make it centered */
+    }
+
+    /* Adjust scrollable div styles for mobile */
+    .custom-scrollable-div {
+        height: auto; /* Allow content to expand vertically as needed */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+}
+
+/* Media query for larger screens (web) */
+@media (min-width: 300px) {
+    .custom-sidebar {
+        width: 250px; /* Adjust sidebar width for larger screens */
+    }
+
+    .custom-main-content {
+        margin-left: 250px; /* Push the main content to the right of the sidebar */
+    }
+
+    .custom-scrollable-div {
+        height: 200px;
+        margin-left: 5%;
+        opacity: 85%;
+        width: 90%; /* Adjust width for larger screens */
+        background-color: #b0aeae;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .btn.btn-primary {
+        background-color: #FF6437;
+        border-color: #FF6437;
+        margin-bottom: 10px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+        z-index: 2;
+        margin-bottom: 5px;
+    }
+}

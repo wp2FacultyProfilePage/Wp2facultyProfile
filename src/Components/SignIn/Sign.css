@@ -1,0 +1,54 @@
+/* SchoolSignIn.css */
+#school-sign-in-container {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #school-sign-in-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #school-sign-in-container .input-container {
+    margin-bottom: 15px;
+  }
+  
+  #school-sign-in-container input[type="text"],
+  #school-sign-in-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  #school-sign-in-container button.register-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #school-sign-in-container button.register-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    #school-sign-in-container {
+      max-width: 100%;
+    }
+  }
+  
