@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.657d4f4d.css",
+    "main.js": "/static/js/main.fda28fd3.js",
+    "static/js/787.9b254679.chunk.js": "/static/js/787.9b254679.chunk.js",
+    "static/media/logo.png": "/static/media/logo.2b3b4f64db23f9b2f437.png",
+    "static/media/pimentel_bg.JPG": "/static/media/pimentel_bg.ac48bcbc0070a2fdbd19.JPG",
+    "static/media/cictlogo.png": "/static/media/cictlogo.590f6dd7cadc8a504e78.png",
+    "static/media/pimentel_bg3.JPG": "/static/media/pimentel_bg3.fc69dbf0e4f66b899370.JPG",
+    "static/media/Odd5.png": "/static/media/Odd5.96a416ba55794a122e2b.png",
+    "static/media/Even5.png": "/static/media/Even5.306c89a00294e17746c5.png",
+    "static/media/default.jpg": "/static/media/default.864c21be3536239632ac.jpg",
+    "index.html": "/index.html",
+    "main.657d4f4d.css.map": "/static/css/main.657d4f4d.css.map",
+    "main.fda28fd3.js.map": "/static/js/main.fda28fd3.js.map",
+    "787.9b254679.chunk.js.map": "/static/js/787.9b254679.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.657d4f4d.css",
+    "static/js/main.fda28fd3.js"
+  ]
+}
